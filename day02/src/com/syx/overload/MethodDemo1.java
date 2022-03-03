@@ -10,8 +10,6 @@ public class MethodDemo1 {
         fire();
         fire(location);
         fire(location, n);
-
-
     }
 
     public static void fire() {

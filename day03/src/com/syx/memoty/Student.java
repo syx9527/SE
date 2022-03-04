@@ -13,6 +13,6 @@ public class Student {
     public void study() {
 
 
-        System.out.printf("姓名：%s性别：%s 爱好：%s%n", name, sex, hobby);
+        System.out.printf("姓名：%s 性别：%s 爱好：%s%n", name, sex, hobby);
     }
 }

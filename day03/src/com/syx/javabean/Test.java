@@ -12,5 +12,6 @@ public class Test {
 
         User u2 = new User("李四",180,6000);
         System.out.println(u2);
+        System.out.println(u2.getClass());
     }
 }

@@ -5,8 +5,8 @@ public class Movie {
     private double score;
     private String actor;
 
-
     public Movie() {
+
     }
 
     public Movie(String name, double score, String actor) {
@@ -24,14 +24,17 @@ public class Movie {
     }
 
     public double getScore() {
+
         return score;
     }
 
     public void setScore(double score) {
+
         this.score = score;
     }
 
     public String getActor() {
+
         return actor;
     }
 
@@ -47,6 +50,4 @@ public class Movie {
                 ", actor='" + actor + '\'' +
                 '}';
     }
-
-
 }

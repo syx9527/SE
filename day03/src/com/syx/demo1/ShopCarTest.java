@@ -6,8 +6,8 @@ public class ShopCarTest {
 
     public static void main(String[] args) {
         Goods[] shopCar = new Goods[100];
-
-        while (true) {
+        boolean status = true;
+        while (status) {
             System.out.println("请您选择如下命令操作：");
             System.out.println("添加商品到购物车：add");
             System.out.println("查询商品到购物车：query");
@@ -20,13 +20,13 @@ public class ShopCarTest {
             String command = sc.next();
 
             switch (command) {
-                case "add" -> {
-                    addGoods(shopCar, sc);
-                    int a = 5 + 6;
-                }
+                case "add" -> addGoods(shopCar, sc);
                 case "query" -> queryGoods(shopCar);
                 case "update" -> updateGoods(shopCar, sc);
-                case "pay" -> pay(shopCar);
+                case "pay" -> {
+                    pay(shopCar);
+                    status = false;
+                }
                 default -> System.out.println("您输入的命令不正确");
             }
         }
@@ -88,6 +88,7 @@ public class ShopCarTest {
     }
 
     public static void updateGoods(Goods[] shopCar, Scanner sc) {
+        queryGoods(shopCar);
         System.out.println("请输入需要修改的商品ID：");
         int id = sc.nextInt();
         Goods g = getGoodsById(shopCar, id);
@@ -104,7 +105,19 @@ public class ShopCarTest {
 
 
     public static void pay(Goods[] shopCar) {
+        System.out.println("您购物车商品信息如下：");
+        queryGoods(shopCar);
 
+        double money = 0;
+        for (Goods g : shopCar) {
+            if (g != null) {
+                money += (g.price * g.buyNumber);
+            } else {
+                break;
+            }
+        }
+
+        System.out.printf("您本次购物需支付%s%n", money);
     }
 
 

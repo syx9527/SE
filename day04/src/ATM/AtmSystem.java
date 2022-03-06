@@ -10,6 +10,7 @@ public class AtmSystem {
         accounts.add(new Account("561202", "林青霞", "张柏芝", 6000, 5000));
         accounts.add(new Account("561203", "林青霞", "张柏芝", 6000, 5000));
         System.out.println("==========欢迎您进入黑心银行ATM系统============");
+
         boolean status = true;
         while (status) {
             System.out.println("1、登录账户");

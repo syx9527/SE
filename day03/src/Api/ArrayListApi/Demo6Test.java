@@ -11,12 +11,12 @@ public class Demo6Test {
         students.add(new Student("20200303", "王五", 24, "自动化172"));
         students.add(new Student("20220304", "李鹏", 22, "自动化172"));
         System.out.println("学号" + "\t\t\t" + "姓名" + "\t\t" + "年龄" + "\t\t" + "班级");
-        for (int i = 0; i < students.size(); i++) {
-            Student s = students.get(i);
+        for (Student s : students) {
             System.out.println(s.getStudentNumber() + "\t" + s.getName() + "\t\t" + s.getAge() + "\t\t" + s.getClassName());
         }
         Scanner sc = new Scanner(System.in);
-        while (true) {
+        boolean status = true;
+        while (status) {
 
             System.out.println("请您输入学号查询学生对象");
             String studentNumber = sc.next();
@@ -24,11 +24,11 @@ public class Demo6Test {
             if (s != null) {
                 System.out.println("学号" + "\t\t\t" + "姓名" + "\t\t" + "年龄" + "\t\t" + "班级");
                 System.out.println(s.getStudentNumber() + "\t" + s.getName() + "\t\t" + s.getAge() + "\t\t" + s.getClassName());
+                status = false;
             } else {
                 System.out.println("查无此人！");
+
             }
-
-
         }
 
     }
@@ -41,8 +41,7 @@ public class Demo6Test {
      * @return 学生对象 | null
      */
     public static Student getStudentById(ArrayList<Student> students, String studentNumber) {
-        for (int i = 0; i < students.size(); i++) {
-            Student s = students.get(i);
+        for (Student s : students) {
             if (s.getStudentNumber().equals(studentNumber)) {
                 return s;
             }

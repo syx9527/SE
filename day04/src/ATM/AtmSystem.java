@@ -33,6 +33,10 @@ public class AtmSystem {
     }
 
     private static void login(ArrayList<Account> accounts, Scanner scanner) {
+        System.out.println("请输入您的卡号");
+        String username=scanner.next();
+        System.out.println("请输入您的密码");
+        String password=scanner.next();
 
     }
 }

@@ -14,5 +14,7 @@ public class Demo8 {
         String result = "%s****%s".formatted(phone.substring(0, 3), phone.substring(7));
         System.out.println(result);
 
+
+
     }
 }

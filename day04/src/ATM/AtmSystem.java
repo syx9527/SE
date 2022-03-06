@@ -12,6 +12,7 @@ public class AtmSystem {
         System.out.println("==========欢迎您进入黑心银行ATM系统============");
 
         boolean status = true;
+
         while (status) {
             System.out.println("1、登录账户");
             System.out.println("2、注册账户");

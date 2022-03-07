@@ -7,7 +7,8 @@ class GetTwo {
         for (; num > 0; ) {
             a = num % op;
             num = num / op;
-            res = "%s%s".formatted(a, res);
+//            res = "%s%s"(a, res);
+            res = String.format("%s%s", a, res);
             // System.out.println(a);
         }
 

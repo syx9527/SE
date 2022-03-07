@@ -4,7 +4,7 @@ public class Account {
     /**
      * 成员变量
      */
-    private String carId;  // 卡号
+    private String cardId;  // 卡号
     private String username;  // 姓名
     private String password; // 密码
     private double money;// 金额
@@ -13,36 +13,12 @@ public class Account {
     public Account() {
     }
 
-    public String getCarId() {
-        return carId;
+    public String getCardId() {
+        return cardId;
     }
 
-    public void setCarId(String carId) {
-        this.carId = carId;
-    }
-
-    public double getQuotaMoney() {
-        return quotaMoney;
-    }
-
-    public void setQuotaMoney(double quotaMoney) {
-        this.quotaMoney = quotaMoney;
-    }
-
-    public Account(String carId, String username, String password, double money, double quotaMoney) {
-        this.carId = carId;
-        this.username = username;
-        this.password = password;
-        this.money = money;
-        this.quotaMoney = quotaMoney;
-    }
-
-    public String getcarId() {
-        return carId;
-    }
-
-    public void setcarId(String carId) {
-        this.carId = carId;
+    public void setCardId(String cardId) {
+        this.cardId = cardId;
     }
 
     public String getUsername() {
@@ -68,4 +44,21 @@ public class Account {
     public void setMoney(double money) {
         this.money = money;
     }
+
+    public double getQuotaMoney() {
+        return quotaMoney;
+    }
+
+    public void setQuotaMoney(double quotaMoney) {
+        this.quotaMoney = quotaMoney;
+    }
+
+    public Account(String cardId, String username, String password, double money, double quotaMoney) {
+        this.cardId = cardId;
+        this.username = username;
+        this.password = password;
+        this.money = money;
+        this.quotaMoney = quotaMoney;
+    }
+
 }

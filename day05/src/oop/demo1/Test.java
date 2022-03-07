@@ -17,6 +17,7 @@ public class Test {
         System.out.println(s2.getName());
         System.out.println(s2.getAge());
         System.out.println(s2.getSex());
+        System.out.println("-------------");
 
     }
 }

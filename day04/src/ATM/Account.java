@@ -1,5 +1,6 @@
 package ATM;
 
+@SuppressWarnings("ALL")
 public class Account {
     /**
      * 成员变量
@@ -12,6 +13,14 @@ public class Account {
 
     public Account() {
     }
+    public Account(String cardId, String username, String password, double money, double quotaMoney) {
+        this.cardId = cardId;
+        this.username = username;
+        this.password = password;
+        this.money = money;
+        this.quotaMoney = quotaMoney;
+    }
+
 
     public String getCardId() {
         return cardId;
@@ -53,12 +62,16 @@ public class Account {
         this.quotaMoney = quotaMoney;
     }
 
-    public Account(String cardId, String username, String password, double money, double quotaMoney) {
-        this.cardId = cardId;
-        this.username = username;
-        this.password = password;
-        this.money = money;
-        this.quotaMoney = quotaMoney;
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "cardId='" + cardId + '\'' +
+                ", username='" + username + '\'' +
+                ", money=" + money +
+                ", quotaMoney=" + quotaMoney +
+                '}';
     }
+
 
 }

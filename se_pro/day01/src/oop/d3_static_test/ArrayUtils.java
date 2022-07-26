@@ -27,7 +27,9 @@ public class ArrayUtils {
     }
 
     public static double getAverage(int[] arr) {
-
+        if (arr == null) {
+            return -1;
+        }
         // 总和 最大值 最小值
 
         int max = arr[0];

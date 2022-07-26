@@ -1,10 +1,13 @@
 package oop.d3_static_test;
 
+/**
+ * @author SYX
+ */
 public class ArrayUtils {
     /**
      * 构造器私有化
      */
-    public ArrayUtils() {
+    private ArrayUtils() {
     }
 
     /**
@@ -13,13 +16,12 @@ public class ArrayUtils {
     public static String toString(int[] arr) {
 
         if (arr != null) {
-            String result = "[";
+            StringBuilder result = new StringBuilder("[");
             for (int i = 0; i < arr.length; i++) {
-                result += i == arr.length - 1 ? arr[i] : arr[i] + ",";
-
+                result.append(i == arr.length - 1 ? arr[i] : arr[i] + ", ");
             }
-            result += "]";
-            return result;
+            result.append("]");
+            return result.toString();
         } else {
             return null;
         }

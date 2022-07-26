@@ -2,6 +2,9 @@ package oop.d7_extends;
 
 import oop.d6_singleinstance.SingleInstance1;
 
+/**
+ * @author SYX
+ */
 public class Test {
     public static void main(String[] args) {
         // 创建子类对象，试试看能不能调用父类的对象

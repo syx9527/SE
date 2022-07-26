@@ -1,5 +1,8 @@
 package oop.d8_extends_test;
 
+/**
+ * @author SYX
+ */
 public class Teacher extends Role {
     private String clubName;
 

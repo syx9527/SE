@@ -4,7 +4,7 @@ public class TestDemo2 {
 
     private String name;
 
-    /**
+    /*
      * 属于对象的，与对象一起加载，自动触发一次
      * 作用：初始化实例对象
      */ {

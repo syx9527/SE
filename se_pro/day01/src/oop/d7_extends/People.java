@@ -1,10 +1,15 @@
 package oop.d7_extends;
 
+/**
+ * @author SYX
+ */
 public class People {
 
     private String name;
     private int age;
 
+    public People() {
+    }
 
     public String getName() {
         return name;

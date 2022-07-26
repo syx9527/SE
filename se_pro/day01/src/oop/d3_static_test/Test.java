@@ -6,7 +6,8 @@ public class Test {
         System.out.println(ArrayUtils.toString(arr));
         System.out.println(ArrayUtils.getAverage(arr));
 
-        int[] arr1 = null;
+        int[] arr1;
+        arr1 = null;
         System.out.println(ArrayUtils.toString(arr1));
         System.out.println(ArrayUtils.getAverage(arr1));
 

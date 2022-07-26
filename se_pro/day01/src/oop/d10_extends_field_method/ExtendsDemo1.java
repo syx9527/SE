@@ -1,5 +1,8 @@
 package oop.d10_extends_field_method;
 
+/**
+ * @author SYX
+ */
 public class ExtendsDemo1 {
     public static void main(String[] args) {
         Birds birds = new Birds();
@@ -18,9 +21,12 @@ class Birds extends Animal {
 
     public void showName() {
         String name = "局部名称-鸟";
-        System.out.println(name);// 局部name
-        System.out.println(this.name);// 子类name
-        System.out.println(super.name);// 父类name
+        // 局部name
+        System.out.println(name);
+        // 子类name
+        System.out.println(this.name);
+        // 父类name
+        System.out.println(super.name);
 
 
     }

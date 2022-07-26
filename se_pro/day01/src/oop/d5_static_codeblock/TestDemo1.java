@@ -3,10 +3,10 @@ package oop.d5_static_codeblock;
 public class TestDemo1 {
     public static String schoolName;
 
-    /**
-     * 与类一起加载，自动触发，优先执行一次，属于类
-     * 作用：可以在程序加载时进行静态数据的初始化操作（准备内容）
-     *
+    /*
+      与类一起加载，自动触发，优先执行一次，属于类
+      作用：可以在程序加载时进行静态数据的初始化操作（准备内容）
+
      */
     static {
         System.out.println("-----静态代码块被触发执行-----");

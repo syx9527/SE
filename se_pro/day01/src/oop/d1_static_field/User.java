@@ -1,7 +1,9 @@
 package oop.d1_static_field;
 
 public class User {
+    // 静态成员变量
     public static int onlineNumber = 161;
+    // 实例成员变量
     private String name;
     private int age;
 
@@ -12,6 +14,7 @@ public class User {
         System.out.println("-----------");
         // System.out.println(name);
         User u1 = new User();
+
         u1.name = "Lx";
         u1.age = 36;
         System.out.println(u1.age);

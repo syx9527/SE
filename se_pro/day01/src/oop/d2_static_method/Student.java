@@ -27,7 +27,7 @@ public class Student {
 
         // 2.对象.实例方法
         // 会报错
-        // stufy();
+        // study();
         Student s = new Student();
         s.name = "葛根";
         s.study();

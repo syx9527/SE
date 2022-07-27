@@ -1,5 +1,8 @@
 package d11_interface_implements;
 
+/**
+ * @author icas-tt
+ */
 public class PingPongMan implements SportMan, Law {
     private String name;
 
@@ -19,10 +22,6 @@ public class PingPongMan implements SportMan, Law {
         this.name = name;
     }
 
-    @Override
-    public void rule() {
-        System.out.println(this.name + "要遵章守法，不能打假球!");
-    }
 
     @Override
     public void run() {
@@ -33,4 +32,10 @@ public class PingPongMan implements SportMan, Law {
     public void competition() {
         System.out.println(name + "参加比赛");
     }
+
+    @Override
+    public void rule() {
+        System.out.println(this.name + "要遵章守法，不能打假球!");
+    }
+
 }

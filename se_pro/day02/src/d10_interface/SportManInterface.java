@@ -10,6 +10,7 @@ public interface SportManInterface {
     //  public abstract 可以省略不写
     // public abstract void run();
     void run();
+
     // public abstract void eat();
     void eat();
 }

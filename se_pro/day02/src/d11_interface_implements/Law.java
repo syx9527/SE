@@ -1,5 +1,11 @@
 package d11_interface_implements;
 
+/**
+ * @author icas-tt
+ */
 public interface Law {
-    void rule();  // 遵章守法
+    /**
+     * 遵章守法
+     */
+    void rule();
 }

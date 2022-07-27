@@ -1,15 +1,24 @@
 package d7_abstract_test;
 
-public  class Test {
+public class Test {
     public static void main(String[] args) {
         GoldCard goldCard = new GoldCard();
         goldCard.setMoney(10000);
         goldCard.setName("刘二");
         goldCard.pay(300);
         goldCard.getMoney();
+
+        SilverCard silverCard = new SilverCard();
+        silverCard.setMoney(10000);
+        silverCard.setName("王五");
+        silverCard.pay(300);
+        silverCard.getMoney();
     }
 }
 
+/**
+ * 卡片
+ */
 abstract class Card {
     String name;
     private double money;
@@ -38,6 +47,9 @@ abstract class Card {
     }
 }
 
+/**
+ * 金卡
+ */
 class GoldCard extends Card {
 
     @Override
@@ -45,15 +57,15 @@ class GoldCard extends Card {
         // 优惠后的金额算出来
         double rs = money * 0.8;
         double lastMoney = getMoney() - rs;
-        System.out.println(getName() + "当前账户总额:" + getMoney() + "当前消费了：" + rs + "消费后剩余：" + lastMoney);
+        System.out.println(getName() + "当前账户总额:" + getMoney() + "当前消费了：" + money + "实际消费： " + rs + "消费后剩余：" + lastMoney);
         setMoney(lastMoney);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }
 
+/**
+ * 银卡
+ */
 class SilverCard extends Card {
 
     @Override
@@ -61,7 +73,7 @@ class SilverCard extends Card {
         // 优惠后的金额算出来
         double rs = money * 0.9;
         double lastMoney = getMoney() - rs;
-        System.out.println(getName() + "当前账户总额:" + getMoney() + "当前消费了：" + rs + "消费后剩余：" + lastMoney);
+        System.out.println(getName() + "当前账户总额:" + getMoney() + "当前消费了：" + money + "实际消费： " + rs + "消费后剩余：" + lastMoney);
         setMoney(lastMoney);
     }
 }

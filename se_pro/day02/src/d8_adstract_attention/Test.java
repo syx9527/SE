@@ -1,8 +1,8 @@
 package d8_adstract_attention;
 
-import d6_abstract_class.Cat;
-import d6_abstract_class.Dog;
-
+/**
+ * @author icas-tt
+ */
 public class Test {
     public static void main(String[] args) {
         // 抽象类不能创建对象

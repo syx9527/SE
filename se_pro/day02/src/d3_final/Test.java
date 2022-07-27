@@ -4,11 +4,11 @@ package d3_final;
     目标：了解final中一些基本语法知识
  */
 public class Test {
-    public static final String schoolName = "昆明理工大学";
+    public static final String SCHOOL_NAME = "昆明理工大学";
     private final String name = "张三";
 
     public static void main(String[] args) {
-        // schoolName = "云南师范大学";
+        // SCHOOL_NAME = "云南师范大学";
 
         Test t = new Test();
         // t.name = "sss";
@@ -42,5 +42,6 @@ class Cat extends Animal {
     public void run() {
         super.run();
         System.out.println("快跑！");
+
     }
 }

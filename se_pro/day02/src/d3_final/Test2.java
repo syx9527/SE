@@ -1,5 +1,7 @@
 package d3_final;
 
+import java.util.Arrays;
+
 public class Test2 {
     public static void main(String[] args) {
         // 1.final 修饰基本类型变量，其数据不能再改变
@@ -10,9 +12,12 @@ public class Test2 {
 
         final int[] arr = {10, 20, 30, 40};
         System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
+
         // arr = {60, 30, 40};
         arr[0] = 5;
         System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
 
     }
 }

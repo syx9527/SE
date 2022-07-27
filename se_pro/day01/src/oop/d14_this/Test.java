@@ -14,3 +14,72 @@ public class Test {
 
     }
 }
+
+class People {
+    private String name;
+    private int age;
+
+    public People() {
+    }
+
+    public People(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+
+
+class Student {
+    private String className;
+    private String name;
+    // private int age;
+
+    public Student() {
+    }
+
+    public Student(String name) {
+
+        this(name, "云南师范大学");
+    }
+
+
+    public Student(String name, String className) {
+
+        this.className = className;
+        this.name = name;
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public String getClassName() {
+        return this.className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+}

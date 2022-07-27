@@ -11,7 +11,7 @@ public  class Test {
 }
 
 abstract class Card {
-    private String name;
+    String name;
     private double money;
 
     /**
@@ -47,6 +47,10 @@ class GoldCard extends Card {
         double lastMoney = getMoney() - rs;
         System.out.println(getName() + "当前账户总额:" + getMoney() + "当前消费了：" + rs + "消费后剩余：" + lastMoney);
         setMoney(lastMoney);
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 

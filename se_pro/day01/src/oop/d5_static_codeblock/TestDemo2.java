@@ -2,7 +2,7 @@ package oop.d5_static_codeblock;
 
 public class TestDemo2 {
 
-    private String name;
+    private final String name;
 
     /*
      * 属于对象的，与对象一起加载，自动触发一次

@@ -22,15 +22,25 @@ public class Test {
 }
 
 interface AAA {
-    void run();
+    default void run() {
+    }
+
 }
 
 interface BBB {
-    void run();
+    default void run() {
+    }
+
+
+    void go();
 }
 
 interface CCC extends AAA, BBB {
 
+    @Override
+    default void run() {
+        AAA.super.run();
+    }
 }
 
 
@@ -51,14 +61,14 @@ class Cat extends Animal implements Food, A {
 }
 
 interface A {
-    public static void test() {
+    static void test() {
         System.out.println("A");
     }
 }
 
 
 interface B {
-    public static void test() {
+    static void test() {
         System.out.println("B");
     }
 }

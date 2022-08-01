@@ -19,7 +19,7 @@ public class User {
         u1.age = 36;
         System.out.println(u1.age);
         System.out.println(u1.name);
-        u1.onlineNumber++;
+        onlineNumber++;
         System.out.println(onlineNumber);
         System.out.println("-----------");
 
@@ -29,7 +29,7 @@ public class User {
         u2.age = 36;
         System.out.println(u2.age);
         System.out.println(u2.name);
-        u2.onlineNumber++;
+        onlineNumber++;
         System.out.println(onlineNumber);
         System.out.println("-----------");
 

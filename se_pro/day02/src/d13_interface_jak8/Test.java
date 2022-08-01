@@ -21,9 +21,9 @@ interface SportMan {
 
 
     /**
-    2.静态方法
-        必须使用static修饰，默认public修饰
-        --接口的静态方法，必须接口命自己调用
+     * 2.静态方法
+     * 必须使用static修饰，默认public修饰
+     * --接口的静态方法，必须接口命自己调用
      */
 
     default void run() {

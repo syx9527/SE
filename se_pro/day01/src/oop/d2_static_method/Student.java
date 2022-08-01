@@ -32,6 +32,6 @@ public class Student {
         s.name = "葛根";
         s.study();
         // 3.对象.静态方法(不推荐)
-        s.getMax(50, 60);
+        getMax(50, 60);
     }
 }

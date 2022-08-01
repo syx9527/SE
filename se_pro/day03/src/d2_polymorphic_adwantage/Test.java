@@ -1,16 +1,23 @@
 package d2_polymorphic_adwantage;
 
 
+/**
+ * @author 17447
+ */
 public class Test {
 
     public static void main(String[] args) {
         Animal tortoise = new Tortoise();
         go(tortoise);
-
+        System.out.println("------------");
         Animal dog = new Dog();
         go(dog);
 
-        // dog.lookDoor();  // 多态下不能访问子类独有功能
+
+        
+        // 多态下不能访问子类独有功能
+        // dog.lookDoor();
+
     }
 
     /**

@@ -41,9 +41,11 @@ public class BigDecimalDemo {
         BigDecimal b11 = BigDecimal.valueOf(3.0);
         /*
             参数一：除数
+            参数二：保留小数位数
+            参数三：舍入模式
 
          */
-        BigDecimal c11 = a11.divide(b11, 2, RoundingMode.HALF_EVEN);
+        BigDecimal c11 = a11.divide(b11, 2, RoundingMode.HALF_UP);
         System.out.println(c11);
 
 

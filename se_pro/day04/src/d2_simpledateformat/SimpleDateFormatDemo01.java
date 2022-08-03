@@ -17,9 +17,16 @@ public class SimpleDateFormatDemo01 {
         System.out.println(d);
 
         // 2.格式化这个时间的对象
-
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String res = simpleDateFormat.format(d);
         System.out.println(res);
+        System.out.println("---------------");
+        // 格式化时间毫秒值
+        long time1 = System.currentTimeMillis() + 121 * 1000;
+        String res2 = simpleDateFormat.format(time1);
+        System.out.println(res2);
+        System.out.println("---------------");
+
+
     }
 }

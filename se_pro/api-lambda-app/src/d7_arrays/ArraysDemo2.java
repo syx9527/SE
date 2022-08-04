@@ -1,8 +1,5 @@
 package d7_arrays;
 
-import com.oracle.net.Sdp;
-
-import java.time.Instant;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -40,10 +37,8 @@ public class ArraysDemo2 {
         System.out.println("--------------");
 
         // Arrays.sort(students); // 直接报错
-        Arrays.sort(students, (o1, o2) -> {
-            // 自己指定规则
-            return Double.compare(o2.getHeight(), o1.getHeight());
-        });
+
+        Arrays.sort(students, (o1, o2) -> Double.compare(o2.getHeight(), o1.getHeight()));
         System.out.println(Arrays.toString(students));
 
     }

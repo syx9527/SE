@@ -3,7 +3,6 @@ package d2_collection_api;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.HashSet;
 
 /**
  * 目标：明确Collection集合体系的特点
@@ -46,6 +45,19 @@ public class CollectionDemo {
         // 7.b把集合转换成数组 [Java, 独孤求败, HTMl, Mybatis]
         Object[] o = list.toArray();
         System.out.println(Arrays.toString(o));
+
+        System.out.println("---------------");
+        Collection<String> c1 = new ArrayList<>();
+        c1.add("java1");
+        c1.add("java2");
+
+        Collection<String> c2 = new ArrayList<>();
+        c2.add("赵敏");
+        c2.add("周芷若");
+        // 把c2中的所有元素 全部添加到c1中
+        c1.addAll(c2);
+        System.out.println(c1);
+
 
     }
 }

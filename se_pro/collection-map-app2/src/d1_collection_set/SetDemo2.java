@@ -1,4 +1,4 @@
-package d1_set;
+package d1_collection_set;
 
 /**
  * HashCode

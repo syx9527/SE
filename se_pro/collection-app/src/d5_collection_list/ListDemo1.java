@@ -1,7 +1,6 @@
 package d5_collection_list;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author SYX
@@ -11,6 +10,7 @@ public class ListDemo1 {
         // 1.创建一个ArrayList集合对象
         // List：有序、可重复，有索引
         //  多态
+
         List<String> list = new ArrayList<>();
         list.add("Java");
         list.add("Python");
@@ -31,6 +31,10 @@ public class ListDemo1 {
         System.out.println(list.get(2));
         // 5.修改指定索引位置处的元素：pulic E set(int index, E element),返回修改前的元素
         System.out.println(list.set(2, "Sql Server"));
+        Map<Integer, ArrayList<Integer>> maps = new HashMap<>();
+        ArrayList<Integer> s = new ArrayList<>();
+        maps.getOrDefault(1,s);
+        java.util.LinkedHashSet<Integer> KILL_PPID= new LinkedHashSet<>();
 
 
     }

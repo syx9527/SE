@@ -12,5 +12,7 @@ public class SetDemo2 {
         System.out.println(name.hashCode());
         System.out.println(name1.hashCode());
 
+
+        
     }
 }

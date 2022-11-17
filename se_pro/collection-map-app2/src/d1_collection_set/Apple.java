@@ -83,14 +83,12 @@ public class Apple implements Comparable<Apple> {
 
     /**
      * 类自定义比较规则
-     *
-     * @param o
-     * @return
      */
     @Override
     public int compareTo(Apple o) {
-        //  按照重量排序
+        //  按照重量升序序
 
-        return this.weight - o.weight >= 0 ? 1 : -1;
+        // return this.weight - o.weight >= 0 ? 1 : -1;
+        return this.weight - o.weight;
     }
 }

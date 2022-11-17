@@ -9,6 +9,8 @@ import java.util.Set;
 
 public class HashMapDemo1 {
     public static void main(String[] args) {
+
+        // map 集合是根据键去重
         Map<Student, String> maps = new HashMap<>();
 
         Student s1 = new Student("令狐冲", 20, '男');

@@ -169,5 +169,25 @@
 
 <img src="img/Map/image-20220812092133281.png" alt="image-20220812092133281" style="zoom:67%;" />
 
+# TreeMap集合
 
+## TreeMap集合概述和特点
 
+- 由键决定特性：不重复，无索引，可排序
+
+- 可排序：按照键数据的大小默认升序（从小到大）排序，**只能对键排序**
+
+- **注意：TreeMap集合一定是要排序的，可以默认排序，也可以将键按照指定的规则排序**
+
+- TreeMap和TreeSet底层原理是一样的。
+
+  ```java
+      public TreeSet() {
+          this(new TreeMap<E,Object>());
+      }
+  ```
+
+## TreeMap集合自定义排序规则有2种
+
+- 实现Conparable接口排序，重写比较规则
+- 集合自定义conparator比较容器，重写比较规则

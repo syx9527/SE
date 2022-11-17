@@ -12,17 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0568e1-cc8f-4a8b-8844-a6adecd906c4" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/se_pro.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-lambda-app/api-lambda-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collection-app/collection-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/collection-map-app2/collection-map-app2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day01/day01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day02/day02.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/day03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection-map-app2/src/d1_collection_set/SetDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection-map-app2/src/d1_collection_set/SetDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection-map-app2/src/d9_map_impl/HashMapDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection-map-app2/src/d9_map_impl/HashMapDemo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/Map.md" beforeDir="false" afterPath="$PROJECT_DIR$/note/Map.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/collection-map-app2/d1_collection_set/SetDemo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/collection-map-app2/d1_collection_set/SetDemo3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/collection-map-app2/d9_map_impl/HashMapDemo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/collection-map-app2/d9_map_impl/HashMapDemo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/collection-map-app2/exam/second/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/collection-map-app2/exam/second/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +65,7 @@
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23068309" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -96,20 +92,20 @@
       <recent name="d3_polymorphic_convert" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="d1_collection_set" />
+      <recent name="d9_map_impl" />
       <recent name="exam.first" />
       <recent name="exam.second" />
       <recent name="d7_map_traversal" />
-      <recent name="d9_genericity_method" />
-      <recent name="d2_collection_api" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exam.first.Main" />
+  <component name="RunManager" selected="Application.SetDemo5">
+    <configuration name="HashMapDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="d9_map_impl.HashMapDemo1" />
       <module name="collection-map-app2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exam.first.*" />
+          <option name="PATTERN" value="d9_map_impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exam.second.Main" />
+    <configuration name="LinkedHashMapDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="d9_map_impl.LinkedHashMapDemo2" />
       <module name="collection-map-app2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exam.second.*" />
+          <option name="PATTERN" value="d9_map_impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,19 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="collection-map-app2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="d8_map_test.Test" />
+    <configuration name="SetDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="d1_collection_set.SetDemo3" />
       <module name="collection-map-app2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="d8_map_test.*" />
+          <option name="PATTERN" value="d1_collection_set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,26 +139,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="s" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s" />
+    <configuration name="SetDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="d1_collection_set.SetDemo4" />
       <module name="collection-map-app2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="d1_collection_set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="collection-app" />
+    <configuration name="SetDemo5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="d1_collection_set.SetDemo5" />
+      <module name="collection-map-app2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="d1_collection_set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="collection-app" />
-      <option name="filePath" />
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SetDemo5" />
+        <item itemvalue="Application.SetDemo3" />
+        <item itemvalue="Application.SetDemo4" />
+        <item itemvalue="Application.LinkedHashMapDemo2" />
+        <item itemvalue="Application.HashMapDemo1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -206,7 +223,13 @@
       <workItem from="1668649443709" duration="20000" />
       <workItem from="1668649485344" duration="302000" />
       <workItem from="1668649801397" duration="337000" />
-      <workItem from="1668650143951" duration="43000" />
+      <workItem from="1668650143951" duration="861000" />
+      <workItem from="1668651014795" duration="359000" />
+      <workItem from="1668651379016" duration="113000" />
+      <workItem from="1668651507915" duration="77000" />
+      <workItem from="1668651588169" duration="19000" />
+      <workItem from="1668651621537" duration="3082000" />
+      <workItem from="1668654777471" duration="2688000" />
     </task>
     <task id="LOCAL-00001" summary="接口实现类-案例">
       <created>1659339056657</created>
@@ -348,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668650031218</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update">
+      <created>1668650194973</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1668650194973</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

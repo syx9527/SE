@@ -8,24 +8,25 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         ArrayList<String> s = new ArrayList<>();
+
         while (true) {
-            String temp = input.next();
+            String temp = input.nextLine().trim();
+
             if ("#".equals(temp)) {
                 break;
             } else {
                 s.add(temp);
             }
         }
-        for (String value : s) {
+        for (String i : s) {
             int res = 0;
-            for (int j = 0; j < value.length(); j++) {
-                if (!" ".equals(value)) {
-                    res += ((int) value.charAt(j) - 64) * (j + 1);
+            for (int j = 0; j < i.length(); j++) {
+                if (i.charAt(j) != ' ') {
+                    res += ((int) i.charAt(j) - 64) * (j + 1);
                 }
             }
+
             System.out.println(res);
         }
-
-
     }
 }

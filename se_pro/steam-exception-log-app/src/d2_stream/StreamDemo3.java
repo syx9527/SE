@@ -2,6 +2,8 @@ package d2_stream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Stream;
 
 /**
  * 目标：掌握常用Stream流API
@@ -39,5 +41,31 @@ public class StreamDemo3 {
 
         long size = list.stream().filter(s -> s.length() == 3).count();
         System.out.println(size);
+        list.stream().filter(s -> s.startsWith("张")).limit(2).forEach(System.out::println);
+        System.out.println("----------------");
+        list.stream().filter(s -> s.startsWith("张")).skip(2).forEach(System.out::println);
+        System.out.println("----------------");
+
+        // Map加工方法
+        // 给集合元素的前面都加上一个"黑马的"
+
+        list.stream().map(s -> "《倚天屠龙记》：" + s).forEach(System.out::println);
+        System.out.println("----------------");
+
+        // 需求：把所有的学生加工成一个学生对象
+
+        // list.stream().map(s -> new Student(s)).forEach(System.out::println);
+        list.stream().map(Student::new).forEach(System.out::println);
+        System.out.println("----------------");
+
+        // 合并流
+        Stream<String> s1 = list.stream().filter(s -> s.startsWith("张"));
+        Stream<String> s2 = Stream.of("Java1", "Java2", "html");
+        // public static <T> Stream<T> concat(Stream<? extends T> a, Stream<? extends T> b)
+        Stream<String> s3 = Stream.concat(s1, s2);
+        // s3.forEach(System.out::println);
+        s3.distinct().forEach(System.out::println);
+        System.out.println("----------------");
+
     }
 }

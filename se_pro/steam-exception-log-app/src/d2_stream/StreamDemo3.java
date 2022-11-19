@@ -34,6 +34,8 @@ public class StreamDemo3 {
         //     }
         // });
         list.stream().filter(s -> s.startsWith("张")).forEach(s -> System.out.println(s));
+        System.out.println("----------------");
+
 
         long size = list.stream().filter(s -> s.length() == 3).count();
         System.out.println(size);

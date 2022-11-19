@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @author SYX
  */
-public class SteamTest {
+public class StreamTest {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
         Collections.addAll(names, "张三丰", "张强", "赵敏", "周芷若", "张无忌");

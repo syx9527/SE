@@ -21,7 +21,7 @@ import java.util.stream.Stream;
  *
  * @author SYX
  */
-public class SteamDemo2 {
+public class StreamDemo2 {
     public static void main(String[] args) {
         /*-------------Collection集合获取流--------------*/
 

@@ -16,12 +16,23 @@ package d9_exception_custom;
  * -  提醒不强烈，编译阶段不报错！运行时才可能出错。
  * ---------------
  * 需求：
- * -    认为年龄小于0岁，或者大于200岁极为异常
+ * -    认为年龄小于0岁，或者大于200岁即为异常
  *
  * @author SYX
  */
 public class ExceptionDemo {
     public static void main(String[] args) {
 
+    }
+
+    public static void checkAge(int age) {
+        if (age < 0 || age > 200) {
+            // 抛出异常对象
+            // throw
+
+            throw new IllegalArgumentException(age + "is illegal!");
+        } else {
+            System.out.println("年龄合法：奖励一个大笔都");
+        }
     }
 }

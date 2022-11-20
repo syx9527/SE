@@ -1,6 +1,5 @@
 package d9_api_object;
 
-import com.sun.xml.internal.ws.api.client.WSPortInfo;
 
 /**
  * 目标：掌握Object类中equals方法的使用

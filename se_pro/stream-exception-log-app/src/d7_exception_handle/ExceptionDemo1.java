@@ -1,5 +1,9 @@
 package d7_exception_handle;
 
+import java.io.FileInputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * 异常的默认处理流程
  * -
@@ -12,7 +16,16 @@ package d7_exception_handle;
  * @author SYX
  */
 public class ExceptionDemo1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        System.out.println("start");
+        parseTime("2022-11-20 18:11:23");
+        System.out.println("over");
+    }
 
+    public static void parseTime(String timeStr) throws Exception {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = sdf.parse(timeStr);
+        System.out.println(date);
+        FileInputStream file = new FileInputStream("D:/img/image.jpg");
     }
 }

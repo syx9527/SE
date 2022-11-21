@@ -21,16 +21,33 @@ package d9_exception_custom;
  * @author SYX
  */
 public class ExceptionDemo {
-    public static void main(String[] args) {
+    public final static int MAX_AGE = 200;
+    public final static int MI_AGE = 0;
 
+    public static void main(String[] args) {
+        try {
+            checkAge(-34);
+        } catch (AgeIllegalException e) {
+            e.printStackTrace();
+        }
+        // 编译阶段不报错
+        checkAge2(-34);
     }
 
-    public static void checkAge(int age) {
-        if (age < 0 || age > 200) {
+    public static void checkAge(int age) throws AgeIllegalException {
+        if (age < MI_AGE || age > MAX_AGE) {
             // 抛出异常对象
-            // throw
+            // throw：在方法内部直接创建一个异常对象，并从此点抛出
+            // throws：用在方法申明上，抛出方法内部的异常
+            throw new AgeIllegalException(age + " is illegal!");
+        } else {
+            System.out.println("年龄合法：奖励一个大笔都");
+        }
+    }
 
-            throw new IllegalArgumentException(age + "is illegal!");
+    public static void checkAge2(int age) {
+        if (age < MI_AGE || age > MAX_AGE) {
+            throw new AgeIllegalRuntimeException(age + " is illegal!");
         } else {
             System.out.println("年龄合法：奖励一个大笔都");
         }

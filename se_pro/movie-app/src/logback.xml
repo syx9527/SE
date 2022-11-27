@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="LOG_HOME" value="movie-app/log/"/>
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+
+        <target>System.out</target>
+        <encoder>
+            <pattern><![CDATA[[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%p] [%t] [%c >> %M:%L ] %p: %m%n]]></pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern><![CDATA[[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%p] [%t] [%c >> %M:%L ] %p: %m%n]]></pattern>
+        </encoder>
+        <file>${LOG_HOME}/log.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/log-%d{yyyyMMdd}.%i.log.gz</fileNamePattern>
+            <!-- 每天一个日志文件，当天的日志文件超过10MB时，生成新的日志文件，当天的日志文件数量超过totalSizeCap/maxFileSize，日志文件就会被回滚覆盖。 -->
+            <maxFileSize>1MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+    <logger name="com.sports" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+        <!--<appender-ref ref="myAppender"/>-->
+    </logger>
+    <!--级别程度依次是TRACE<DEBUG<WORN<ERROR;默认级别是DEBUG（忽略大小写），对应其方法。-->
+    <!--作用：用于控制系统中那些日志界别·级别是可以输出的，只输出级别不低于设定级别的日志信息。-->
+    <!--ALL和OFF分别是打开、关闭全部日志信息。-->
+    <root level="ALL">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="FILE"/>
+        <!--<appender-ref ref="mqAppender"/>-->
+    </root>
+</configuration>

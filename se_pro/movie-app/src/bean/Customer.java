@@ -7,4 +7,5 @@ package bean;
  */
 public class Customer extends User {
     // 属性待定
+
 }

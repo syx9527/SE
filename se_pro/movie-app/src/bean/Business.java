@@ -43,12 +43,13 @@ public class Business extends User {
         this.address = address;
     }
 
+
     @Override
     public String toString() {
         return "Business{" +
                 "shopName='" + shopName + '\'' +
                 ", address='" + address + '\'' +
-                '}';
+                "} " + super.toString();
     }
 
     @Override

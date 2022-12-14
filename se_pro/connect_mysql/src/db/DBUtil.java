@@ -1,6 +1,7 @@
 package db;
 
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.*;
@@ -22,7 +23,9 @@ public class DBUtil {
         //初始化连接信息
         Properties properties = new Properties();
         try {
-            properties.load(new FileReader("src/db.properties"));
+            File file = new File(".");
+            System.out.println(file.getAbsolutePath());
+            properties.load(new FileReader("connect_mysql/src/db.properties"));
             driverName = properties.getProperty("driverName");
             url = properties.getProperty("url");
             username = properties.getProperty("username");
@@ -80,6 +83,13 @@ public class DBUtil {
         return i;
     }
 
+    /**
+     * 其他操作
+     *
+     * @param sql  sql
+     * @param objs objs
+     * @return boolean execute
+     */
     public boolean execute(String sql, Object[] objs) {
         boolean execute = false;
         try {
